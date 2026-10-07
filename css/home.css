@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "KiwiSoda";
+    src: url(../font/KiwiSoda.ttf) format('truetype');
+}
+
 /* HTML Rules */
 html {
-    background-image: url(../png/backgroundbrick.png)
+    background-image: url(../png/backgroundbrick.png);
 }
 
 /* Header Rules */
@@ -15,6 +20,7 @@ header img {
 
 header {
     background-color: rgb(150, 150, 150);
+    background: radial-gradient(rgb(150, 150, 150), rgb(135, 135, 135), rgb(110, 110, 110));
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -26,18 +32,20 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 60%;
     text-align: center;
     box-shadow: rgb(50, 60, 70) 10px 0px 25px,
   rgb(50, 60, 70) -10px 0px 25px;
+      font-family: "KiwiSoda", Arial, sans-serif;
 }
 
 img {
     border: 4px solid rgb(100, 110, 150);
 }
+
 /* Article Styles */
 article {
-    min-height: 650px;
+    padding: 35px;
     line-height: 2.5em;
 }
 
@@ -45,4 +53,53 @@ article {
 footer {
     background-color: rgb(125, 125, 125);
     padding: 5px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+/* Link Styles */
+a {
+    color: rgb(50, 55, 155);
+    font-size: 1em;
+    text-decoration: underline;
+    text-decoration-color: rgb(50, 55, 155);
+    text-decoration-thickness: 2px;
+}
+
+a:hover {
+    color: rgb(100, 105, 200);
+    font-size: 1em;
+    text-decoration: underline;
+    text-decoration-color: rgb(100, 105, 200);
+    text-decoration-thickness: 2px;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 2.5em;
+    text-decoration: none;
+    text-decoration-color: rgb(135, 155, 155);
+    text-decoration-thickness: 3px;
+}
+
+h3 {
+    clear: both;
+    padding: 10px;
+}
+
+/* Aside Styles */
+aside-left{
+    float: left;
+    display: block;
+    margin-left: 15%;
+    margin-right: 0%;
+    height: 10%;
+    width: 30%;
+}
+
+aside-right {
+    float: right;
+    display: block;
+    margin-left: 0%;
+    margin-right: 15%; 
 }
